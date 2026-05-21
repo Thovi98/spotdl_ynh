@@ -14,13 +14,6 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --action="stop" --service="${app}"
 
 #=================================================
-# APP CONFIG FILES
-#=================================================
-ynh_script_progression "Updating $app's configuration files..."
-
-# ynh_config_add --template=".env" --destination="$install_dir/.env"
-
-#=================================================
 # INSTALL PYTHON DEPENDENCIES
 #=================================================
 ynh_script_progression "Upgrading $app..."
